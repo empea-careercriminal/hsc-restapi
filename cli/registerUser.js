@@ -58,9 +58,12 @@ async function main() {
 
     // Check to see if we've already enrolled the admin user.
     /*
-    1. First, it checks if the identity for the admin user exists in the wallet. If it does not exist, it will print out an error message and exit.
-    2. If the identity for the admin user exists in the wallet, it will then check if the identity has already been enrolled. If it has not been enrolled, it will enroll the admin user using the enrollAdmin.js application.
-    3. If the identity for the admin user has already been enrolled, it will print out a message indicating that the admin user has already been enrolled.
+    1. First, it checks if the identity for the admin user exists in the wallet. If it does not exist, it will print out
+       an error message and exit.
+    2. If the identity for the admin user exists in the wallet, it will then check if the identity has already been
+       enrolled. If it has not been enrolled, it will enroll the admin user using the enrollAdmin.js application.
+    3. If the identity for the admin user has already been enrolled, it will print out a message indicating that the
+       admin user has already been enrolled.
     */
     const adminExists = await wallet.exists('admin');
     if (!adminExists) {
