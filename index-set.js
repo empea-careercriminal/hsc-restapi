@@ -18,7 +18,8 @@ module.exports = async function (req, contract) {
   try {
      /* 
      Submit the specified transaction.
-     Submit a transaction to the ledger. The transaction function name will be evaluated on the endorsing peers and then submitted to the ordering service for committing to the ledger. 
+     Submit a transaction to the ledger. The transaction function name will be evaluated on the endorsing peers and then
+     submitted to the ordering service for committing to the ledger. 
      */
     await contract.submitTransaction('invoke', p1, p2, value);
     
