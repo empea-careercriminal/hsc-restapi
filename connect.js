@@ -3,6 +3,15 @@
  * @rbole 
  */
 
+/*
+1. We include the fabric-network library.
+2. We include the path to construct the connection profile.
+3. We create a new file system based wallet for managing identities.
+4. We create a new gateway for connecting to our peer node.
+5. We get the network (channel) our contract is deployed to.
+6. We get the contract from the network.
+7. We construct our retour object.
+*/
 'use strict';
 module.exports =  function (config) {
 
